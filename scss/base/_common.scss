@@ -1,0 +1,61 @@
+/*========== Common ==========*/
+@use "../abstracts";
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Gordita", sans-serif;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+a,
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
