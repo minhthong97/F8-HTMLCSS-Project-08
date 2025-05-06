@@ -4,10 +4,19 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "sass scss:assets/css -w",
+        "sass": "sass scss:assets/css -w",
         "minify": "sass scss:assets/css -s compressed"
     },
     "author": "",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/minhthong97/F8-HTMLCSS-Project-08.git"
+    },
+    "keywords": [],
+    "bugs": {
+        "url": "https://github.com/minhthong97/F8-HTMLCSS-Project-08/issues"
+    },
+    "homepage": "https://github.com/minhthong97/F8-HTMLCSS-Project-08#readme",
     "description": ""
 }

@@ -1,4 +1,4 @@
-/*========== Common ==========*/
+/* ========== Base ========== */
 @use "../abstracts";
 
 *,
@@ -13,8 +13,12 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Gordita", sans-serif;
-    overflow-x: hidden;
+    font-family: abstracts.$primary-font;
+
+    color: var(--text-color);
+    background: var(--body-bg-color);
+
+    // overflow-x: hidden;
 }
 
 html,
@@ -35,6 +39,7 @@ input {
 }
 
 a,
+img,
 input,
 textarea,
 select,
@@ -58,4 +63,8 @@ button {
 
 .line-clamp.line-3 {
     --line-clamp: 3;
+}
+
+.icon {
+    filter: var(--icon-color);
 }
